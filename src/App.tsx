@@ -17,7 +17,7 @@ const App: React.FC = () => {
                 const data = await response.json();
                 setCountries(data);
             } catch (error) {
-                console.error('Ошибка при загрузке списка стран', error);
+                console.error('Ошибка при загрузке', error);
             }
         };
         fetchCountries();
